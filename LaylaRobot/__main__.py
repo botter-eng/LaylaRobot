@@ -196,22 +196,9 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="👰 Add 𝙇𝙖𝙮𝙡𝙖 to your group",
+                            text="👰 Add Cosmicswapbot to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
-                    ],
-                     [
-                         InlineKeyboardButton(
-                             text="Support Group",
-                             url=f"https://t.me/Girls_and_Boys_Chatting"),
-                         InlineKeyboardButton(
-                             text="📘 Logs",
-                             url="https://t.me/LaylaLogs")
-                     ],
-                     [
-                         InlineKeyboardButton(
-                             text="☑️ Source code",
-                             url="https://github.com/QueenArzoo/LaylaRobot")
                      ]]))
     else:
         update.effective_message.reply_text(
